@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.coursera.concurrent.ListSetTest" time="1,221.933" tests="6" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/yulinzhang/Documents/Documents - Yulin’s MacBook Pro/Java Projects/Concurrent Programming/miniproject_1"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/yulinzhang/Documents/Documents - Yulin’s MacBook Pro/Java Projects/Concurrent Programming/miniproject_1"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/9b/dwl5x2tx57bdchvtyv24n1sh0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/yulinzhang/Documents/Documents - Yulin’s MacBook Pro/Java Projects/Tutorials/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf18218839766304020355.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/yulinzhang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/yulinzhang"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="yulinzhang"/>
+    <property name="java.class.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.15.0.20200310-1832/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="java.ext.dirs" value="/Users/yulinzhang/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/yulinzhang/Documents/Documents - Yulin’s MacBook Pro/Java Projects/Concurrent Programming/miniproject_1/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testCoarseGrainedLockingRandomLarge" classname="edu.coursera.concurrent.ListSetTest" time="178.496">
+    <failure message="expected:&lt;50535&gt; but was:&lt;50531&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<50535> but was:<50531>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingHelper(ListSetTest.java:150)
+	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingRandomLarge(ListSetTest.java:52)
+]]></failure>
+    <system-out><![CDATA[=========================================================
+CoarseList vs. SyncList (Large Random)
+=========================================================
+# threads = 8
+3.9562660576648585x improvement in add throughput (9.236008889658557 -> 36.540108478447046)
+5.023636702028662x improvement in contains throughput (23.710729104919977 -> 119.11408896333519)
+6.402723286406647x improvement in remove throughput (23.068882240565188 -> 147.70366951303947)
+=========================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testCoarseGrainedLockingRepeatingLarge" classname="edu.coursera.concurrent.ListSetTest" time="132.841">
+    <failure message="expected:&lt;10000&gt; but was:&lt;10055&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<10000> but was:<10055>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingHelper(ListSetTest.java:158)
+	at edu.coursera.concurrent.ListSetTest.testCoarseGrainedLockingRepeatingLarge(ListSetTest.java:69)
+]]></failure>
+    <system-out><![CDATA[=========================================================
+CoarseList vs. SyncList (Large Repeating)
+=========================================================
+# threads = 8
+4.551696921862668x improvement in add throughput (73.98416276515809 -> 336.75348592475666)
+5.245442601412384x improvement in contains throughput (60.11365237401963 -> 315.3227130891772)
+3.9832869080779942x improvement in remove throughput (895.1048951048951 -> 3565.459610027855)
+=========================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testReadWriteLocksRandomLarge" classname="edu.coursera.concurrent.ListSetTest" time="647.669">
+    <failure message="expected:&lt;50535&gt; but was:&lt;50533&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<50535> but was:<50533>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:197)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRandomLarge(ListSetTest.java:85)
+]]></failure>
+    <system-out><![CDATA[=========================================================
+RWCoarseList vs. SyncList (Large Random)
+=========================================================
+# threads = 8
+7.898769042437431x improvement in add throughput (1.3776061510114643 -> 10.88139281828074)
+5.451805843110191x improvement in contains throughput (9.001786291967312 -> 49.07599110497661)
+6.664106203556818x improvement in remove throughput (8.018442417560388 -> 53.43575185772731)
+=========================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testReadWriteLocksRandomSmall" classname="edu.coursera.concurrent.ListSetTest" time="104.143">
+    <failure message="expected:&lt;31551&gt; but was:&lt;31550&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<31551> but was:<31550>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:197)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRandomSmall(ListSetTest.java:101)
+]]></failure>
+    <system-out><![CDATA[=========================================================
+RWCoarseList vs. SyncList (Small Random)
+=========================================================
+# threads = 8
+5.621856866537717x improvement in add throughput (4.587419003383221 -> 25.789813023855576)
+6.554994590695997x improvement in contains throughput (17.604665236287616 -> 115.39848539487919)
+5.527517886626307x improvement in remove throughput (15.930701448698162 -> 88.05723720418271)
+=========================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testReadWriteLocksRepeatingLarge" classname="edu.coursera.concurrent.ListSetTest" time="109.667">
+    <failure message="expected:&lt;10000&gt; but was:&lt;10003&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<10000> but was:<10003>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:205)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRepeatingLarge(ListSetTest.java:117)
+]]></failure>
+    <system-out><![CDATA[=========================================================
+RWCoarseList vs. SyncList (Large Repeating)
+=========================================================
+# threads = 8
+5.198991935483871x improvement in add throughput (74.45612130143095 -> 387.0967741935484)
+5.048472151990176x improvement in contains throughput (54.946627364565146 -> 277.3965180957885)
+7.2467426710097715x improvement in remove throughput (431.5091583323969 -> 3127.0358306188923)
+=========================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testReadWriteLocksRepeatingSmall" classname="edu.coursera.concurrent.ListSetTest" time="49.117">
+    <failure message="expected:&lt;10000&gt; but was:&lt;10002&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<10000> but was:<10002>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksHelper(ListSetTest.java:205)
+	at edu.coursera.concurrent.ListSetTest.testReadWriteLocksRepeatingSmall(ListSetTest.java:133)
+]]></failure>
+    <system-out><![CDATA[=========================================================
+RWCoarseList vs. SyncList (Small Repeating)
+=========================================================
+# threads = 8
+4.313514570702131x improvement in add throughput (87.05508954885514 -> 375.5133972227655)
+4.400374659400545x improvement in contains throughput (74.30628120283292 -> 326.97547683923705)
+3.31913499344692x improvement in remove throughput (379.0720631786772 -> 1258.1913499344691)
+=========================================================
+]]></system-out>
+  </testcase>
+</testsuite>
